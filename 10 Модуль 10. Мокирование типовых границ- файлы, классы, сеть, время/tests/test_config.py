@@ -16,4 +16,5 @@ class TestLoadConfig(unittest.TestCase):
         self.assertEqual(result["base_url"], "https://api.example.com")
         self.assertEqual(result["api_key"], "test-key-123")
         self.assertEqual(result["timeout"], 10)
+        
         mock_file_open.assert_called_once_with("dummy_path.json", "r", encoding="utf-8")

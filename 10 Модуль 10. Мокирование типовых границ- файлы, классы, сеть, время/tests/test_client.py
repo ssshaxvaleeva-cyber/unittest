@@ -13,6 +13,7 @@ class TestCatalogClientSuccess(unittest.TestCase):
             "name": "Wireless Mouse",
             "price": 25,
             "currency": "USD",
+            
             "in_stock": True,
         }
         client = CatalogClient(base_url="https://api.test", api_key="key", timeout=2)

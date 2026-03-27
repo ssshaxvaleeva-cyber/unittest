@@ -15,6 +15,7 @@ class CatalogClient:
     def fetch_product(self, product_id: int) -> dict:
         url = f"{self.base_url}/products/{product_id}"
         try:
+            
             response = requests.get(
                 url,
                 headers={"Authorization": f"Bearer {self.api_key}"},

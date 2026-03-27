@@ -14,6 +14,7 @@ def normalize_product(payload: dict, fetched_at: str) -> dict:
         "fetched_at": fetched_at,
     }
 
+
 def build_product_snapshot(config_path: str, product_id: int) -> dict:
     """Оркестрирует получение и нормализацию снимка продукта."""
     cfg = load_config(config_path)
